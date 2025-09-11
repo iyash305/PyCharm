@@ -1,0 +1,6 @@
+2025-09-03 18:28:53,236 - INFO - \u27a1\ufe0f Open Google homepage
+2025-09-03 18:28:53,236 - ERROR - \u274c Open Google homepage - FAILED: WebDriver.get() missing 1 required positional argument: 'url'
+2025-09-03 18:28:53,236 - INFO - \u27a1\ufe0f Find search box
+2025-09-03 18:28:53,236 - ERROR - \u274c Find search box - FAILED: 'str' object has no attribute 'locator_converter'
+2025-09-03 18:28:53,237 - INFO - \u27a1\ufe0f Submit search
+2025-09-03 18:28:53,237 - ERROR - \u274c Submit search - FAILED: 'str' object has no attribute 'locator_converter'

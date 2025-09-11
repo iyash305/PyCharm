@@ -1,0 +1,126 @@
+2025-08-26 16:31:07,858 - INFO - Opened PedalPay login page
+2025-08-26 16:31:07,991 - INFO - Entered email: yash@gmail.com
+2025-08-26 16:31:08,057 - INFO - Entered password: ********
+2025-08-26 16:31:08,345 - INFO - Clicked Sign in button
+2025-08-26 16:31:08,896 - INFO - Login successful \u2705
+2025-08-26 16:31:08,897 - INFO - Adding shop...
+2025-08-26 16:31:09,258 - INFO - Uploaded shop image
+2025-08-26 16:31:09,423 - INFO - Entered shop name: Cafe Coffee Day
+2025-08-26 16:31:10,182 - INFO - Filled shop details
+2025-08-26 16:31:10,351 - INFO - Shop submitted successfully \u2705
+2025-08-26 16:31:10,498 - INFO - Closed shop form
+2025-08-26 16:31:10,499 - INFO - Adding reward category and reward...
+2025-08-26 16:31:11,726 - INFO - Opened Add Reward Category form
+2025-08-26 16:31:12,450 - INFO - Reward category added successfully \u2705
+2025-08-26 16:31:12,450 - INFO - Adding country...
+2025-08-26 16:31:22,590 - ERROR - Error while adding country \u274c Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6962b78d5+2802741]
+	GetHandleVerifier [0x0x7ff69601eb70+79568]
+	(No symbol) [0x0x7ff695dbc0fa]
+	(No symbol) [0x0x7ff695e12a96]
+	(No symbol) [0x0x7ff695e12d4c]
+	(No symbol) [0x0x7ff695e66017]
+	(No symbol) [0x0x7ff695e3accf]
+	(No symbol) [0x0x7ff695e62e24]
+	(No symbol) [0x0x7ff695e3aa63]
+	(No symbol) [0x0x7ff695e03c91]
+	(No symbol) [0x0x7ff695e04a23]
+	GetHandleVerifier [0x0x7ff6962e2ced+2979917]
+	GetHandleVerifier [0x0x7ff6962dd0f3+2956371]
+	GetHandleVerifier [0x0x7ff6962facbd+3078173]
+	GetHandleVerifier [0x0x7ff69603836e+184014]
+	GetHandleVerifier [0x0x7ff69604024f+216495]
+	GetHandleVerifier [0x0x7ff6960270c4+113700]
+	GetHandleVerifier [0x0x7ff696027279+114137]
+	GetHandleVerifier [0x0x7ff69600df78+10968]
+	BaseThreadInitThunk [0x0x7ffe7c797374+20]
+	RtlUserThreadStart [0x0x7ffe7dddcc91+33]
+
+2025-08-26 16:31:22,590 - ERROR - Workflow stopped due to error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6962b78d5+2802741]
+	GetHandleVerifier [0x0x7ff69601eb70+79568]
+	(No symbol) [0x0x7ff695dbc0fa]
+	(No symbol) [0x0x7ff695e12a96]
+	(No symbol) [0x0x7ff695e12d4c]
+	(No symbol) [0x0x7ff695e66017]
+	(No symbol) [0x0x7ff695e3accf]
+	(No symbol) [0x0x7ff695e62e24]
+	(No symbol) [0x0x7ff695e3aa63]
+	(No symbol) [0x0x7ff695e03c91]
+	(No symbol) [0x0x7ff695e04a23]
+	GetHandleVerifier [0x0x7ff6962e2ced+2979917]
+	GetHandleVerifier [0x0x7ff6962dd0f3+2956371]
+	GetHandleVerifier [0x0x7ff6962facbd+3078173]
+	GetHandleVerifier [0x0x7ff69603836e+184014]
+	GetHandleVerifier [0x0x7ff69604024f+216495]
+	GetHandleVerifier [0x0x7ff6960270c4+113700]
+	GetHandleVerifier [0x0x7ff696027279+114137]
+	GetHandleVerifier [0x0x7ff69600df78+10968]
+	BaseThreadInitThunk [0x0x7ffe7c797374+20]
+	RtlUserThreadStart [0x0x7ffe7dddcc91+33]
+
+2025-08-26 16:44:48,557 - INFO - Opened PedalPay login page
+2025-08-26 16:44:48,668 - INFO - Entered email: yash@gmail.com
+2025-08-26 16:44:48,744 - INFO - Entered password: ********
+2025-08-26 16:44:48,851 - INFO - Clicked Sign in button
+2025-08-26 16:44:49,390 - INFO - Login successful \u2705
+2025-08-26 16:44:49,390 - INFO - Adding shop...
+2025-08-26 16:44:49,748 - INFO - Uploaded shop image
+2025-08-26 16:44:49,952 - INFO - Entered shop name: Cafe Coffee Day
+2025-08-26 16:44:51,087 - INFO - Filled shop details
+2025-08-26 16:44:51,227 - INFO - Shop submitted successfully \u2705
+2025-08-26 16:44:51,370 - INFO - Closed shop form
+2025-08-26 16:44:51,370 - INFO - Adding reward category and reward...
+2025-08-26 16:44:52,401 - INFO - Opened Add Reward Category form
+2025-08-26 16:44:52,979 - INFO - Reward category added successfully \u2705
+2025-08-26 16:44:52,979 - INFO - Adding country...
+2025-08-26 16:45:03,492 - ERROR - Error while adding country \u274c Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6cc4378d5+2802741]
+	GetHandleVerifier [0x0x7ff6cc19eb70+79568]
+	(No symbol) [0x0x7ff6cbf3c0fa]
+	(No symbol) [0x0x7ff6cbf92a96]
+	(No symbol) [0x0x7ff6cbf92d4c]
+	(No symbol) [0x0x7ff6cbfe6017]
+	(No symbol) [0x0x7ff6cbfbaccf]
+	(No symbol) [0x0x7ff6cbfe2e24]
+	(No symbol) [0x0x7ff6cbfbaa63]
+	(No symbol) [0x0x7ff6cbf83c91]
+	(No symbol) [0x0x7ff6cbf84a23]
+	GetHandleVerifier [0x0x7ff6cc462ced+2979917]
+	GetHandleVerifier [0x0x7ff6cc45d0f3+2956371]
+	GetHandleVerifier [0x0x7ff6cc47acbd+3078173]
+	GetHandleVerifier [0x0x7ff6cc1b836e+184014]
+	GetHandleVerifier [0x0x7ff6cc1c024f+216495]
+	GetHandleVerifier [0x0x7ff6cc1a70c4+113700]
+	GetHandleVerifier [0x0x7ff6cc1a7279+114137]
+	GetHandleVerifier [0x0x7ff6cc18df78+10968]
+	BaseThreadInitThunk [0x0x7ffe7c797374+20]
+	RtlUserThreadStart [0x0x7ffe7dddcc91+33]
+
+2025-08-26 16:45:03,492 - ERROR - Workflow stopped due to error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6cc4378d5+2802741]
+	GetHandleVerifier [0x0x7ff6cc19eb70+79568]
+	(No symbol) [0x0x7ff6cbf3c0fa]
+	(No symbol) [0x0x7ff6cbf92a96]
+	(No symbol) [0x0x7ff6cbf92d4c]
+	(No symbol) [0x0x7ff6cbfe6017]
+	(No symbol) [0x0x7ff6cbfbaccf]
+	(No symbol) [0x0x7ff6cbfe2e24]
+	(No symbol) [0x0x7ff6cbfbaa63]
+	(No symbol) [0x0x7ff6cbf83c91]
+	(No symbol) [0x0x7ff6cbf84a23]
+	GetHandleVerifier [0x0x7ff6cc462ced+2979917]
+	GetHandleVerifier [0x0x7ff6cc45d0f3+2956371]
+	GetHandleVerifier [0x0x7ff6cc47acbd+3078173]
+	GetHandleVerifier [0x0x7ff6cc1b836e+184014]
+	GetHandleVerifier [0x0x7ff6cc1c024f+216495]
+	GetHandleVerifier [0x0x7ff6cc1a70c4+113700]
+	GetHandleVerifier [0x0x7ff6cc1a7279+114137]
+	GetHandleVerifier [0x0x7ff6cc18df78+10968]
+	BaseThreadInitThunk [0x0x7ffe7c797374+20]
+	RtlUserThreadStart [0x0x7ffe7dddcc91+33]
+
