@@ -17,7 +17,7 @@ chrome_options.add_experimental_option("prefs", {
 driver = webdriver.Chrome(options=chrome_options)
 driver.maximize_window()
 wait = WebDriverWait(driver, 10)
-driver.get("http://code-server-app/PedalPay/BO/login")
+driver.get("https://automate.we-innovate.co/PedalPay/BO/login")
 
 
 def login():
@@ -33,16 +33,16 @@ def add_shop():
     add_shop_btn.click()
 
     upload_input = wait.until(EC.presence_of_element_located((By.ID, "icon-upload")))
-    upload_input.send_keys(r"C:\Users\manoj\Desktop\SampleImages\bonanza.png")
+    upload_input.send_keys(r"/Users/mac/Desktop/DAE Work/bb.png")
 
     shop_name = wait.until(EC.presence_of_element_located((By.ID,"name")))
-    shop_name.send_keys("Cafe Coffee Day")
+    shop_name.send_keys("Starbucks")
 
     shop_desc = wait.until(EC.presence_of_element_located((By.ID,"description")))
     shop_desc.send_keys("Grab a coffee and make your day memorable")
 
     shop_email = wait.until(EC.presence_of_element_located((By.ID,"email")))
-    shop_email.send_keys("ccd@pp.com")
+    shop_email.send_keys("yash.indulkar@digital-enterprises.co.in")
 
     #shop_pass = wait.until(EC.presence_of_element_located((By.ID,"password")))
     #shop_pass.send_keys("Yash@1234")
@@ -69,7 +69,7 @@ def add_shop():
     select_city.select_by_visible_text("Berlin")
 
     shop_num = wait.until(EC.presence_of_element_located((By.ID, "number")))
-    shop_num.send_keys("8764349912")
+    shop_num.send_keys("9421079522")
 
     #website = wait.until(EC.presence_of_element_located((By.ID,"website")))
     #website.send_keys("www.ccd.ge")
@@ -140,36 +140,36 @@ def rewards():
     reward_category_module = wait.until(EC.element_to_be_clickable((By.XPATH,"//a[text()='Reward Category']")))
     reward_category_module.click()
 
-    add_reward_category = wait.until(EC.presence_of_element_located((By.XPATH,"//button[normalize-space(text())='Add Reward Category']")))
-    add_reward_category.click()
-
-# Upload file
-    reward_upload = driver.find_element(By.ID, "icon-upload")
-    reward_upload.send_keys(r"C:\Users\manoj\Desktop\SampleImages\bonanza.png")
-
-# Reward Category
-    reward_category = driver.find_element(By.XPATH, "//input[@placeholder='Enter Reward Category title']")
-    reward_category.send_keys("Shopping Offers")
-
-# Description
-    reward_description = driver.find_element(By.XPATH, "//input[@placeholder='Enter description']")
-    reward_description.send_keys("Flat 10% discount on selected stores")
-
-# Add button
-    add_btn = driver.find_element(By.XPATH, "//button[normalize-space(text())='Add']")
-    add_btn.click()
-
-    latest_edit_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "(//button[normalize-space(text())='Edit'])[1]")))
-    latest_edit_btn.click()
-
-    edit_description = wait.until(EC.presence_of_element_located(
-    (By.XPATH, "//input[@placeholder='Enter description']")))
-    edit_description.clear()
-    edit_description.send_keys("Updated: Now 15% discount on all stores")
-
-    save_btn = wait.until(EC.element_to_be_clickable(
-    (By.XPATH, "//button[normalize-space(text())='Update']")))
-    save_btn.click()
+#     add_reward_category = wait.until(EC.presence_of_element_located((By.XPATH,"//button[normalize-space(text())='Add Reward Category']")))
+#     add_reward_category.click()
+#
+# # Upload file
+#     reward_upload = driver.find_element(By.ID, "icon-upload")
+#     reward_upload.send_keys(r"/Users/mac/Desktop/DAE Work/box.png")
+#
+# # Reward Category
+#     reward_category = driver.find_element(By.XPATH, "//input[@placeholder='Enter Reward Category title']")
+#     reward_category.send_keys("Shopping Offers")
+#
+# # Description
+#     reward_description = driver.find_element(By.XPATH, "//input[@placeholder='Enter description']")
+#     reward_description.send_keys("Flat 10% discount on selected stores")
+#
+# # Add button
+#     add_btn = driver.find_element(By.XPATH, "//button[normalize-space(text())='Add']")
+#     add_btn.click()
+#
+#     latest_edit_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "(//button[normalize-space(text())='Edit'])[1]")))
+#     latest_edit_btn.click()
+#
+#     edit_description = wait.until(EC.presence_of_element_located(
+#     (By.XPATH, "//input[@placeholder='Enter description']")))
+#     edit_description.clear()
+#     edit_description.send_keys("Updated: Now 15% discount on all stores")
+#
+#     save_btn = wait.until(EC.element_to_be_clickable(
+#     (By.XPATH, "//button[normalize-space(text())='Update']")))
+#     save_btn.click()
 
     rewards_module = wait.until(EC.element_to_be_clickable((By.XPATH,"//a[text()='Rewards']")))
     rewards_module.click()
@@ -179,11 +179,11 @@ def rewards():
 
 
     upload_input = wait.until(EC.presence_of_element_located((By.ID, "icon-upload")))
-    upload_input.send_keys(r"C:\Users\manoj\Desktop\SampleImages\bonanza.png")
+    upload_input.send_keys(r"/Users/mac/Desktop/DAE Work/box.png")
 
 # 2. Reward Category (dropdown)
     reward_category = wait.until(EC.element_to_be_clickable((By.ID, "rewardsCategory_Id")))
-    Select(reward_category).select_by_visible_text("Shopping Offers")
+    Select(reward_category).select_by_visible_text("Cafés")
 
 # 3. Shop (dropdown)
     shop = wait.until(EC.element_to_be_clickable((By.XPATH, "//select[@formcontrolname='shop_id']")))
@@ -191,43 +191,43 @@ def rewards():
 
 # 4. Reward Title
     reward_title = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Enter Reward Title']")))
-    reward_title.send_keys("Free Cappuccino")
+    reward_title.send_keys("Free Coffee")
 
 
     description = wait.until(EC.visibility_of_element_located((By.ID, "description")))
 
-    description.send_keys("Get one free cappuccino with any order above ₹200")
+    description.send_keys("Get a free cappuccino when you spend €5 or more.")
 
 
     credit_coins = wait.until(EC.presence_of_element_located((By.ID, "credit_coins")))
-    credit_coins.send_keys("50")
+    credit_coins.send_keys("150")
 
 
     min_spend = wait.until(EC.presence_of_element_located((By.ID, "minimum_spend")))
-    min_spend.send_keys("100")
+    min_spend.send_keys("€20")
 
 
     valid_from = wait.until(EC.presence_of_element_located((By.ID, "valid_from")))
-    valid_from.send_keys("25-08-2025")
+    valid_from.send_keys("01-10-2025")
 
 
     valid_to = wait.until(EC.presence_of_element_located((By.ID, "valid_to")))
-    valid_to.send_keys("30-08-2025")
+    valid_to.send_keys("30-10-2025")
 
 
     discount_type = wait.until(EC.presence_of_element_located((By.ID, "discount_type")))
-    discount_type.send_keys("Percentage")
+    discount_type.send_keys("Fixed")
 
 
     discount_value = wait.until(EC.presence_of_element_located((By.ID, "discount")))
-    discount_value.send_keys("10")
+    discount_value.send_keys("5")
 
 
     limit_type = wait.until(EC.presence_of_element_located((By.ID, "redemption_limit_type")))
-    limit_type.send_keys("Per User")
+    limit_type.send_keys("PerUser")
 
 
-    limit_value = wait.until(EC.presence_of_element_located((By.ID, "redemption_limit")))
+    limit_value = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@id='redemption_limit']")))
     limit_value.send_keys("1")
 
 
@@ -238,13 +238,13 @@ def rewards():
     add_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[normalize-space(text())='Add']")))
     add_btn.click()
 
-    latest_reward_edit_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "(//button[normalize-space(text())='Edit'])[1]")))
-    latest_reward_edit_btn.click()
-    reward_title = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Enter Reward Title']")))
-    reward_title.clear()
-    reward_title.send_keys("Free Espresso")
-    reward_update = wait.until(EC.presence_of_element_located((By.XPATH,"//button[normalize-space(text())='Update']")))
-    reward_update.click()
+    # latest_reward_edit_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "(//button[normalize-space(text())='Edit'])[1]")))
+    # latest_reward_edit_btn.click()
+    # reward_title = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Enter Reward Title']")))
+    # reward_title.clear()
+    # reward_title.send_keys("Free Espresso")
+    # reward_update = wait.until(EC.presence_of_element_located((By.XPATH,"//button[normalize-space(text())='Update']")))
+    # reward_update.click()
 
 def country():
     master_module = wait.until(EC.presence_of_element_located((By.XPATH,"//span[normalize-space(text())='Master']")))
@@ -310,7 +310,7 @@ def challenge():
     challenge_icon.send_keys(r"C:\Users\manoj\Desktop\SampleImages\ironman.png")
 
     challenge_title = wait.until(EC.presence_of_element_located((By.ID, "title")))
-    challenge_title.send_keys("Ironman  ")
+    challenge_title.send_keys("Ironman")
 
     challenge_desc = wait.until(EC.presence_of_element_located((By.ID, "description")))
     challenge_desc.send_keys("The toughest challenge as a Cyclist")
@@ -472,10 +472,10 @@ def cycling_config():
 
 
 login()
-#add_shop()
-#rewards()
+add_shop()
+# rewards()
 #country()
-challenge()
+#challenge()
 #cycling_config()
 
 

@@ -117,17 +117,46 @@
 #
 # max_num2(3,5,1)
 
-def calculateNetTax(gross,state):
-    state_tax = {'Mum': 10, 'Del': 9, 'Pun': 0}
-    net = gross - (gross * 10)
-    if state in state_tax:
-        net = net - (gross * state_tax[state]/100)
-        print("Your net amount is: " + str(net))
-        return net
-    else:
-        print("State not in list")
-        return None
+# def calculateNetTax(gross,state):
+#     state_tax = {'Mum': 10, 'Del': 9, 'Pun': 0}
+#     net = gross - (gross * 10)
+#     if state in state_tax:
+#         net = net - (gross * state_tax[state]/100)
+#         print("Your net amount is: " + str(net))
+#         return net
+#     else:
+#         print("State not in list")
+#         return None
 
-calculateNetTax(600000,'Mum')
+# calculateNetTax(600000,'Mum')
 
+# def happy_birthday(name,age):
+#     print("Happy Birthday")
+#     print(f"Happy Birthday,{name}")
+#     print(f"You are {age} years old")
+#
+# happy_birthday('Yash',35)
+#
+#
+# def name(first,last):
+#     first = first.upper()
+#     last = last.capitalize()
+#     return first + " " + last
+#
+# full_name = name("yash", "ind")
+# print(full_name)
+
+# def num(*args):
+#     total = 0
+#     for arg in args:
+#         total += arg
+#     return total
+#
+# print(num(2,6,5,4))
+#
+# def name(*args):
+#     for arg in args:
+#         print(arg, end=" ")
+#
+# name("Yash", "Ajay" ,"Indulkar")
 
