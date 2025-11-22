@@ -40,7 +40,7 @@ def business():
         EC.element_to_be_clickable((By.XPATH, "//button[contains(normalize-space(), 'Add Business')]"))
     )
     add_business.click()
-    driver.find_element(By.ID,"Name").send_keys("Test Business 1")
+    driver.find_element(By.ID,"Name").send_keys("Test Business 4")
     business_type = driver.find_element(By.XPATH,"//select[@id='BusinessTypeID']")
     select = Select(business_type)
     select.select_by_visible_text("Distributor")
@@ -63,9 +63,9 @@ def business():
     annual_profit.send_keys("350000")
     no_of_employees = driver.find_element(By.ID,"NoOfEmployees")
     no_of_employees.send_keys("20")
-    cont_person_name = driver.find_element(By.ID,"ContactPersonName").send_keys("Tim Jacobs")
-    bus_email = driver.find_element(By.ID,"EmailID").send_keys("prime@chainvest.com")
-    mob_num1 = driver.find_element(By.ID,"MobileNo1").send_keys("0922112211")
+    cont_person_name = driver.find_element(By.ID,"ContactPersonName").send_keys("Archer")
+    bus_email = driver.find_element(By.ID,"EmailID").send_keys("car@gmail.com")
+    mob_num1 = driver.find_element(By.ID,"MobileNo1").send_keys("0912133333")
     # mob_num2 = driver.find_element(By.ID,"MobileNo2").send_keys("9786411087")
     website = driver.find_element(By.ID,"WebsiteURL").send_keys("https://www.primewealth.com/")
     license_num = driver.find_element(By.ID,"BusinessLicenseNo").send_keys("A12345")
@@ -74,7 +74,7 @@ def business():
     fan_id = driver.find_element(By.ID,"FAYDA_ID")
     fan_id.send_keys("1029384756564738")
     # vat_num = driver.find_element(By.ID,"VAT").send_keys("IE1234567T")
-    description = driver.find_element(By.ID,"Description").send_keys("Buy RS Traders is a dynamic and forward-thinking company specializing in diverse trading solutions. We connect markets and facilitate seamless transactions, empowering growth and opportunity for our clients worldwide")
+    description = driver.find_element(By.ID,"Description").send_keys("Test Description")
     save = driver.find_element(By.XPATH,"//span[normalize-space()='Save & Next']").click()
     time.sleep(0.5)
     doc_1 = wait.until(EC.presence_of_element_located((
@@ -135,7 +135,7 @@ def business():
     acc_holder = driver.find_element(By.XPATH,"//input[@formcontrolname='AccountHolderName']")
     acc_holder.send_keys("DMart")
     acc_num = driver.find_element(By.XPATH,"//input[@formcontrolname= 'AccountNumber']")
-    acc_num.send_keys("1000000162535")
+    acc_num.send_keys("1004122162535")
     # ifsc = wait.until(EC.presence_of_element_located((By.XPATH,"//input[@formcontrolname= 'IFSC']")))
     # ifsc.send_keys("HDFC00000504")
     branch_name = driver.find_element(By.XPATH,"//input[@formcontrolname= 'BankBranchName']")
@@ -446,13 +446,13 @@ def user():
 
 
     enter_email= driver.find_element(By.XPATH,"//input[@formcontrolname = 'Email']")
-    enter_email.send_keys("kane@chainvest.com")
+    enter_email.send_keys("anek@chainvest.com")
 
     enter_phn_num = driver.find_element(By.XPATH, "//input[@formcontrolname = 'Phone']")
-    enter_phn_num.send_keys("9837221021")
+    enter_phn_num.send_keys("0988888888")
 
-    enter_pass= driver.find_element(By.XPATH,"//input[@formcontrolname = 'PasswordHash']")
-    enter_pass.send_keys("P@ssw0rd")
+    # enter_pass= driver.find_element(By.XPATH,"//input[@formcontrolname = 'PasswordHash']")
+    # enter_pass.send_keys("P@ssw0rd")
 
     user_country_dropdown = driver.find_element(By.XPATH,"//select[@formcontrolname = 'CountryID']")
     country_select = Select(user_country_dropdown)
@@ -460,7 +460,7 @@ def user():
 
     role_dropdown = driver.find_element(By.XPATH,"//select[@formcontrolname = 'RoleID']")
     role_select = Select(role_dropdown)
-    role_select.select_by_visible_text("LoanManager")
+    role_select.select_by_visible_text("Admin")
 
     add_user = driver.find_element(By.XPATH,"//button[normalize-space(text())='Add']")
     add_user.click()
@@ -510,7 +510,7 @@ time.sleep(3)
 
 login()
 # time.sleep(1)
-# business()
+business()
 time.sleep(1)
 # user()
 # reports()
