@@ -100,22 +100,14 @@ def business():
     address2 = wait.until(EC.presence_of_element_located((By.XPATH,"//input[@type='text' and @formcontrolname='Address2']")))
     address2.send_keys("Addis")
     # Select the country
-    country = driver.find_element(By.XPATH, "//select[@formcontrolname='CountryID']")
-    select_country = Select(country)
-    select_country.select_by_visible_text("Ethiopia")
+    country = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@formcontrolname='country']")))
+    country.send_keys("Ethiopia")
 
-# Now, wait for the 'Addis Ababa' option to be visible in the State dropdown.
-# This ensures the option has been loaded after the country selection.
-    wait.until(EC.visibility_of_element_located((By.XPATH, "//select[@formcontrolname='StateID']/option[text()='Addis Ababa']")))
+    region = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@formcontrolname='region']")))
+    region.send_keys("Addis Ababa")
 
-# Locate the State dropdown and select the option.
-    region = wait.until(EC.element_to_be_clickable((By.XPATH, "//select[@formcontrolname='StateID']")))
-    select_region= Select(region)
-    select_region.select_by_visible_text("Addis Ababa")
-
-    sub_city = driver.find_element(By.XPATH,"//select[@formcontrolname='ZoneID']")
-    select_sub_city = Select(sub_city)
-    select_sub_city.select_by_visible_text("Addis Ketema")
+    sub_city = wait.until(EC.presence_of_element_located((By.XPATH,"//div[contains(@class,'autocomplete')]//input[@role='combobox']")))
+    sub_city.send_keys("Addis Ketema")
 
     woreda = driver.find_element(By.XPATH,"//select[@formcontrolname='WoredaID']")
     select_woreda = Select(woreda)
